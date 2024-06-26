@@ -1,12 +1,21 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_assignment/controller/providerclass.dart';
+import 'package:provider/provider.dart';
 import "view/SignUpPage.dart";
 
 void main() async {
 WidgetsFlutterBinding.ensureInitialized();
  await Firebase.initializeApp(options:const  FirebaseOptions(apiKey: "AIzaSyAQ5HDtbXV6dcsYkgenP6RhmZpockS8oHw", appId: "1:248243701685:android:af63d38fa097e2205bfbfc", messagingSenderId: "248243701685", projectId: "newaappproject",)
   );
-  runApp(const MyApp());
+ runApp(
+    MultiProvider(
+      providers: [
+        ChangeNotifierProvider(create: (_) => NewsProvider()),
+      ],
+      child: const MyApp(),
+    ),
+ );
 }
 
 class MyApp extends StatelessWidget {
