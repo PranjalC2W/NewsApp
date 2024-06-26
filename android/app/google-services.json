@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "248243701685",
+    "project_id": "newaappproject",
+    "storage_bucket": "newaappproject.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:248243701685:android:af63d38fa097e2205bfbfc",
+        "android_client_info": {
+          "package_name": "com.example.flutter_assignment"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQ5HDtbXV6dcsYkgenP6RhmZpockS8oHw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
